@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en" data-refpop="{&#34;open&#34;:&#34;Open in the notes →&#34;,&#34;goto&#34;:&#34;Go there →&#34;,&#34;loading&#34;:&#34;Loading…&#34;,&#34;failed&#34;:&#34;Could not load this reference.&#34;}"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Study with AI · Category Theory for Mathematical Physics</title><meta name="description" content="An AI assistant will explain anything at any hour — and it will just as happily do your thinking for you, which is how people fail exams. Use it the first way: pick a section below and get a prompt that makes it explain, then hand the work back to you."><link rel="icon" href="/kategorijos/favicon.svg"><link rel="alternate" hreflang="lt" href="/kategorijos/ai"><link rel="alternate" hreflang="en" href="/kategorijos/en/ai"><script>
+      // Applied before first paint, so the page never flashes the wrong theme.
+      (function () {
+        try {
+          var t = localStorage.getItem("categories-theme");
+          if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script><link rel="stylesheet" href="/kategorijos/_astro/about.TTO5MxKY.css"></head> <body> <script type="module" src="/kategorijos/_astro/UserNav.astro_astro_type_script_index_0_lang.DBZI4Erb.js"></script>  <div class="board" aria-hidden="true"><div class="board-ink"></div></div> <script>
+      // Fade the board out over the first 60% of a screen of scrolling.
+      (function () {
+        var board = document.querySelector(".board"), frame = 0;
+        if (!board) return;
+        function update() {
+          frame = 0;
+          board.style.opacity = String(Math.max(0, 1 - window.scrollY / (window.innerHeight * 0.6)));
+        }
+        window.addEventListener("scroll", function () {
+          if (!frame) frame = requestAnimationFrame(update);
+        }, { passive: true });
+        update();
+      })();
+    </script> <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="wrap bar">  <a class="brand" href="/kategorijos/en/">Category Theory</a> <nav class="site-nav">  <div class="nav-links"> <a href="/kategorijos/en/"> Lectures </a><a href="/kategorijos/en/problems"> Problems </a><a href="/kategorijos/en/review"> Review </a><a href="/kategorijos/en/ai" aria-current="page"> Study with AI </a><a href="/kategorijos/en/literature"> Bibliography </a><a href="/kategorijos/en/about"> About </a><a href="/kategorijos/en/search"> Search </a> </div>  <a class="matfiz-user-nav" href="/kategorijos/en/user" data-matfiz-nav data-label="My progress" aria-label="My progress" title="My progress" data-matfiz-course="{&#34;version&#34;:1,&#34;id&#34;:&#34;categories&#34;,&#34;prefix&#34;:&#34;categories-&#34;,&#34;titles&#34;:{&#34;lt&#34;:&#34;Kategorijų teorija matematinei fizikai&#34;,&#34;en&#34;:&#34;Category Theory for Mathematical Physics&#34;},&#34;homes&#34;:{&#34;lt&#34;:&#34;/kategorijos/&#34;,&#34;en&#34;:&#34;/kategorijos/en/&#34;},&#34;details&#34;:{&#34;lt&#34;:&#34;/kategorijos/&#34;,&#34;en&#34;:&#34;/kategorijos/en/&#34;}}" hidden data-astro-cid-udyq3rbu> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-astro-cid-udyq3rbu> <path d="M3 3v18h18" data-astro-cid-udyq3rbu></path><path d="m7 15 4-4 3 3 5-6" data-astro-cid-udyq3rbu></path> </svg> </a>   <div class="lang-switch" role="group" aria-label="Language"> <a href="/kategorijos/ai" hreflang="lt" lang="lt" aria-label="Lietuvių" title="Lietuvių"> LT </a><a href="/kategorijos/en/ai" hreflang="en" lang="en" aria-label="English" title="English" aria-current="true"> EN </a> </div> <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch between light and dark theme"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"> <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path> </svg> </button> </nav> </div> </header> <main class="wrap" id="main" data-pagefind-body="true">  <header class="page-head"> <h1>Learning with AI, not from it</h1> <p class="lede">An AI assistant will explain anything at any hour — and it will just as happily do your thinking for you, which is how people fail exams. Use it the first way: pick a section below and get a prompt that makes it explain, then hand the work back to you.</p> </header> <section class="ask" id="ask" aria-labelledby="ask-heading" data-ask="{&#34;lectures&#34;:[{&#34;id&#34;:1,&#34;title&#34;:&#34;Categories: a theory of systems and processes&#34;,&#34;sections&#34;:[&#34;Systems and processes&#34;,&#34;Categories and examples&#34;,&#34;Functors&#34;,&#34;Natural transformations; Rep(G)congFun(BG,Vectfd)&#34;,&#34;Equivalence; V^** vs V^*&#34;]},{&#34;id&#34;:2,&#34;title&#34;:&#34;Universal properties, adjunctions, semisimple categories&#34;,&#34;sections&#34;:[&#34;Universal properties&#34;,&#34;Representables; Yoneda (statement and use)&#34;,&#34;Adjunctions; ⊗–Hom&#34;,&#34;Linear and semisimple categories; Schur&#34;,&#34;Rep(S₃) and a Jordan block&#34;]},{&#34;id&#34;:3,&#34;title&#34;:&#34;Monoidal categories and string diagrams&#34;,&#34;sections&#34;:[&#34;The definition&#34;,&#34;Coherence (formal diagrams)&#34;,&#34;String diagrams; interchange; Joyal–Street&#34;,&#34;Eckmann–Hilton&#34;,&#34;VecG[omega]: the Z₂ pentagon&#34;,&#34;Monoidal functors&#34;]},{&#34;id&#34;:4,&#34;title&#34;:&#34;Duality: cups, caps and quantum dimension&#34;,&#34;sections&#34;:[&#34;Duals and the snake&#34;,&#34;Bending wires; teleportation as one picture&#34;,&#34;Pivotal, trace, dimension, spherical&#34;,&#34;The Penrose sign and the FS indicator&#34;,&#34;Dagger&#34;]},{&#34;id&#34;:5,&#34;title&#34;:&#34;Fusion categories: particles and how they fuse&#34;,&#34;sections&#34;:[&#34;The definition&#34;,&#34;Fusion rings&#34;,&#34;FPdim; the canonical spherical structure&#34;,&#34;Vertices, bubbles, completeness&#34;,&#34;Fusion spaces&#34;]},{&#34;id&#34;:6,&#34;title&#34;:&#34;F-symbols and the pentagon&#34;,&#34;sections&#34;:[&#34;F-moves&#34;,&#34;The pentagon equation&#34;,&#34;Gauge and Ocneanu&#34;,&#34;Fibonacci solved&#34;,&#34;Ising: kappa H verified; kappa gauge invariant&#34;]},{&#34;id&#34;:7,&#34;title&#34;:&#34;Braiding: hexagons, Yang–Baxter and topological spin&#34;,&#34;sections&#34;:[&#34;B_n versus S_n&#34;,&#34;Braided categories and hexagons&#34;,&#34;Yang–Baxter is Reidemeister III&#34;,&#34;R-symbols; Fibonacci solved&#34;,&#34;Topological spin&#34;,&#34;Pointed braidings; Ising&#34;]},{&#34;id&#34;:8,&#34;title&#34;:&#34;Hopf algebras and quantum groups&#34;,&#34;sections&#34;:[&#34;Bialgebras give monoidal representation categories&#34;,&#34;Antipodes give duals&#34;,&#34;Quasitriangularity gives a braiding&#34;,&#34;Reconstruction, and what it forbids&#34;,&#34;U_q(mathfraksl₂) and the XXZ dictionary&#34;]},{&#34;id&#34;:9,&#34;title&#34;:&#34;Ribbon categories, Temperley–Lieb and SU(2)k&#34;,&#34;sections&#34;:[&#34;Twists and ribbon categories&#34;,&#34;Tangles and the Reshetikhin–Turaev functor&#34;,&#34;Temperley–Lieb and the Kauffman bracket&#34;,&#34;p₂ and coloured strands&#34;,&#34;Roots of unity, the negligible quotient, the pivotal flip&#34;]},{&#34;id&#34;:10,&#34;title&#34;:&#34;Modular tensor categories and anyon models&#34;,&#34;sections&#34;:[&#34;S and T&#34;,&#34;Premodular, modularity, the killing loop&#34;,&#34;Verlinde&#34;,&#34;SL(2,ℤ) and the central charge&#34;,&#34;Fibonacci live; tables of the others&#34;]},{&#34;id&#34;:11,&#34;title&#34;:&#34;Algebras in tensor categories and module categories&#34;,&#34;sections&#34;:[&#34;Algebras and modules in catC&#34;,&#34;Module categories; the explicit module associator&#34;,&#34;Internal Hom; Ostrik&#34;,&#34;VecG: (H,ψ), worked for Z₂; Rep(G)&#34;]},{&#34;id&#34;:12,&#34;title&#34;:&#34;Morita equivalence and the Drinfeld centre&#34;,&#34;sections&#34;:[&#34;Module functors; the dual category; Morita equivalence&#34;,&#34;The Drinfeld centre&#34;,&#34;Z(catnameVec_Z₂) in full; D(G) and Z(VecG)&#34;,&#34;Müger and ENO (statements)&#34;]},{&#34;id&#34;:13,&#34;title&#34;:&#34;Boundaries, defects and non-invertible symmetries&#34;,&#34;sections&#34;:[&#34;The toric-code boundaries&#34;,&#34;Module categories and boundaries; Lagrangian algebras&#34;,&#34;TFIM recap; KW at criticality; the continuum line and the lattice caveat&#34;,&#34;Full gauging, Rep(G), anomaly (statement)&#34;]},{&#34;id&#34;:14,&#34;title&#34;:&#34;Topological quantum field theory: a synthesis&#34;,&#34;sections&#34;:[&#34;Atiyah’s axioms; 1D&#34;,&#34;Frobenius algebras; 2D TQFT is commutative Frobenius&#34;,&#34;Dijkgraaf–Witten&#34;,&#34;Turaev–Viro and string nets&#34;,&#34;RT and TV=RTcircZ; the outlook&#34;]}],&#34;context&#34;:&#34;I am a physics student in a proof-based course on category theory for mathematical physics: string diagrams, fusion and braided categories, anyons, module categories and TQFT. I am studying Lecture {n}, “{title}”, the section “{topic}”. My course draws string diagrams with time running upward (g∘f puts f below g) and the left strand as the first tensor factor; the braiding c_{X,Y} is drawn with the strand from bottom left to top right passing over; duals are EGNO's (ev_X : X*⊗X → 1, coev_X : 1 → X⊗X*); and anyon numerics use the canonical spherical structure, so d_a = FPdim(a). F- and R-symbols depend on a gauge: say when a number does.&#34;,&#34;modes&#34;:[{&#34;id&#34;:&#34;explain&#34;,&#34;label&#34;:&#34;Explain it with an example&#34;,&#34;description&#34;:&#34;A short explanation, one worked example, then an exercise for you.&#34;,&#34;detailLabel&#34;:&#34;What exactly is unclear? Optional, but the sharper the better.&#34;,&#34;detailPlaceholder&#34;:&#34;e.g. why the snake is the identity&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;What I am unsure about: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\n\nPlease:\n1. Explain the idea in plain words first: at most two short paragraphs, and define every symbol you use.\n2. Work ONE small explicit example — Vect_fd with a basis, Vec_G for a small G, or Fibonacci, with every map or matrix written out — showing every step, so that I can check each line by hand.\n3. Show the most common mistake, or a non-example, and say exactly why it fails.\n4. Then set me ONE similar exercise with a different input. Do not solve it. Wait for my answer.\n5. When I answer, do not just say right or wrong. If I am wrong, give me a check I can run myself (apply a map to a basis vector, redraw the picture and read it bottom to top, try the smallest example) and let me find the error.\n\nIf a statement holds only in a gauge, only for a chosen pivotal or spherical structure, or only up to equivalence, say so; and say whether a result is proved, sketched, cited or a physical principle.&#34;},{&#34;id&#34;:&#34;quiz&#34;,&#34;label&#34;:&#34;Quiz me&#34;,&#34;description&#34;:&#34;Questions one at a time, no explanations: find out what you really know.&#34;,&#34;detailLabel&#34;:&#34;Anything to focus on? Optional.&#34;,&#34;detailPlaceholder&#34;:&#34;e.g. I can follow the pictures but not write the formula&#34;,&#34;detailEmpty&#34;:&#34;&#34;,&#34;detailFilled&#34;:&#34;Please focus on: {detail}&#34;,&#34;template&#34;:&#34;{context}\n{detail}\n\nTest my understanding with questions. Do not explain anything unless I write \&#34;just tell me\&#34;.\n1. Ask ONE question at a time and wait for my answer. Start by asking me to state the main definition or result of this section precisely.\n2. Vary the questions: a definition, an example and a non-example, a small diagram to evaluate, which hypothesis a result needs.\n3. When I am wrong or vague, do not correct me. Ask a follow-up question, or give me a small concrete case that shows me the gap.\n4. After six questions, tell me what I know well and what I should reread.&#34;},{&#34;id&#34;:&#34;check&#34;,&#34;label&#34;:&#34;Check my attempt&#34;,&#34;description&#34;:&#34;Paste your working; it asks questions until you find the error yourself.&#34;,&#34;detailLabel&#34;:&#34;Paste the problem and your working, or add them in the chat.&#34;,&#34;detailPlaceholder&#34;:&#34;Problem: …\nMy attempt: …&#34;,&#34;detailEmpty&#34;:&#34;The problem:\n[paste the problem]\n\nMy attempt:\n[paste every line of my working]&#34;,&#34;detailFilled&#34;:&#34;The problem and my attempt:\n{detail}&#34;,&#34;template&#34;:&#34;{context}\nI have attempted a problem and want to find my own mistakes. Do not rewrite my solution and do not give me a corrected one.\n\n{detail}\n\n1. First ask me to say what is given and what has to be shown or computed.\n2. Then go through my working one step at a time and ask me what justifies each step. ONE question at a time.\n3. If a step is wrong, do not name the error. Tell me which line or picture to look at and give me a check I can run (apply it to a basis vector, try the smallest example, check that it does not depend on the gauge).\n4. When the solution is sound, ask me to state its key idea in one sentence.&#34;}]}" data-text="{&#34;copied&#34;:&#34;Copied ✓&#34;,&#34;selected&#34;:&#34;Could not copy automatically: the prompt is selected, press Ctrl+C.&#34;}"> <h2 id="ask-heading">Ask about a lecture</h2> <div class="ask-card"> <label class="ask-step"> <span>Lecture</span> <select class="select-field" data-lecture> <option value="1"> 1 · Categories: a theory of systems and processes </option><option value="2"> 2 · Universal properties, adjunctions, semisimple categories </option><option value="3"> 3 · Monoidal categories and string diagrams </option><option value="4"> 4 · Duality: cups, caps and quantum dimension </option><option value="5"> 5 · Fusion categories: particles and how they fuse </option><option value="6"> 6 · F-symbols and the pentagon </option><option value="7"> 7 · Braiding: hexagons, Yang–Baxter and topological spin </option><option value="8"> 8 · Hopf algebras and quantum groups </option><option value="9"> 9 · Ribbon categories, Temperley–Lieb and SU(2)k </option><option value="10"> 10 · Modular tensor categories and anyon models </option><option value="11"> 11 · Algebras in tensor categories and module categories </option><option value="12"> 12 · Morita equivalence and the Drinfeld centre </option><option value="13"> 13 · Boundaries, defects and non-invertible symmetries </option><option value="14" selected> 14 · Topological quantum field theory: a synthesis </option> </select> </label> <fieldset class="ask-step"> <legend>Section</legend> <div class="chip-row" data-topics> <label class="topic-chip"><input type="radio" name="ask-topic" value="Atiyah’s axioms; 1D" checked><span>Atiyah’s axioms; 1D</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Frobenius algebras; 2D TQFT is commutative Frobenius"><span>Frobenius algebras; 2D TQFT is commutative Frobenius</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Dijkgraaf–Witten"><span>Dijkgraaf–Witten</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="Turaev–Viro and string nets"><span>Turaev–Viro and string nets</span></label><label class="topic-chip"><input type="radio" name="ask-topic" value="RT and TV=RTcircZ; the outlook"><span>RT and TV=RTcircZ; the outlook</span></label> </div> </fieldset> <fieldset class="ask-step"> <legend>What do you need?</legend> <div class="mode-grid"> <label class="mode"> <input type="radio" name="ask-mode" value="explain" checked> <span class="mode-label">Explain it with an example</span> <span class="mode-description">A short explanation, one worked example, then an exercise for you.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="quiz"> <span class="mode-label">Quiz me</span> <span class="mode-description">Questions one at a time, no explanations: find out what you really know.</span> </label><label class="mode"> <input type="radio" name="ask-mode" value="check"> <span class="mode-label">Check my attempt</span> <span class="mode-description">Paste your working; it asks questions until you find the error yourself.</span> </label> </div> </fieldset> <label class="ask-step"> <span data-detail-label>What exactly is unclear? Optional, but the sharper the better.</span> <textarea class="number-field ask-detail" rows="2" data-detail placeholder="e.g. why the snake is the identity"></textarea> </label> <label class="ask-step"> <span>Your prompt — edit it freely</span> <textarea class="ask-preview" rows="12" data-preview spellcheck="false"></textarea> </label> <div class="ask-actions"> <a class="btn btn-primary" href="https://www.google.com/search?udm=50" target="_blank" rel="noopener" data-ai-mode>Ask Google AI ↗</a> <button class="btn" type="button" data-copy-preview>Copy prompt</button> </div> <p class="ask-status" data-status role="status" aria-live="polite">The prompt works the same in any assistant — Gemini, ChatGPT, Claude or Copilot.</p> </div> </section><h2>What a good session looks like</h2> <p class="section-intro">A lecture on duality, the idea “the snake identities”, with “Explain it with an example”. The assistant&#39;s first reply is shortened.</p> <div class="chat"> <div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">AI</span> <p>… Example: in Vect_fd take a basis eᵢ of V with dual basis eⁱ, coev_V(1) = Σᵢ eᵢ ⊗ eⁱ and ev_V(f ⊗ v) = f(v). Then (id_V ⊗ ev_V)(coev_V ⊗ id_V) sends v to Σᵢ eᵢ ⊗ eⁱ ⊗ v and then to Σᵢ eⁱ(v) eᵢ = v: the snake is the identity. Your turn: what does the other snake, (ev_V ⊗ id_V*)(id_V* ⊗ coev_V), do to a functional f?</p> </div>  </div><div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">You</span> <p>It gives Σᵢ f(eᵢ) eⁱ. That is a sum over a basis, so it is not f.</p> </div>  </div><div class="chat-turn chat-ai"> <div class="chat-bubble"> <span class="chat-who">AI</span> <p>Before I say anything, run a check. Evaluate your answer on a basis vector e_j. What do you get, and what does f give there?</p> </div> <p class="chat-note">It does not correct you. It hands you a check you can run.</p> </div><div class="chat-turn chat-you"> <div class="chat-bubble"> <span class="chat-who">You</span> <p>Σᵢ f(eᵢ) eⁱ(e_j) = f(e_j). The two functionals agree on every basis vector, so they are equal: the second snake is the identity on V* too. ✓</p> </div> <p class="chat-note">You found the error and checked the answer yourself. That is what stays.</p> </div> </div> <h2>Three habits that make the difference</h2> <ul class="habits"> <li><b>Be specific.</b> A vague question (“anyons”) gets a vague answer; a sharp one (“why the pentagon fixes Fibonacci&#39;s F-matrix up to gauge, and which of its entries do not depend on the gauge”) gets a sharp one.</li><li><b>Make it hand the work back.</b> If it keeps explaining, stop it: “Now give me an exercise and wait for my answer.” Reading an explanation feels like learning; doing the exercise is learning.</li><li><b>Verify everything.</b> These models get this subject wrong, confidently and often, and in exactly the places this course is careful about: a diagram read top to bottom (here time runs upward), the over-strand of the braiding swapped, left and right duals confused, a gauge-dependent F- or R-entry quoted as physical, a loop value given without its pivotal structure, another source&#39;s S-matrix used with this course&#39;s T, a cited theorem presented as proved. Check every claim against your notes, and compute a small case. Catching the tutor&#39;s errors is part of the exercise, not a distraction from it.</li> </ul> <h2>Longer sessions</h2> <p class="section-intro">Four fuller prompts: revising a whole idea, auditing a proof or a computation you wrote, and setting problems for each other. Open one to read it; fill in the [bracketed fields] in the chat.</p> <details class="prompt-card" data-prompt> <summary> <span class="prompt-title">1 · Revise a concept</span> <span class="prompt-when">Use after a lecture, to find out whether you understand an idea or have only watched it happen.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Socratic Tutor — Category Theory for Mathematical Physics
+
+You are my Socratic tutor for a topic from a proof-based course on category
+theory for physicists: monoidal, rigid, braided and ribbon categories drawn as
+string diagrams, fusion categories and anyons, quantum groups and knots,
+modular tensor categories, module categories and the Drinfeld centre, and
+topological quantum field theory. Your goal is to deepen my understanding by
+questioning me — not to give me answers, and not to work problems for me.
+
+The topic I want to practise is: [e.g. why Rep(G) = Fun(BG, Vect) / why
+V → V** is natural and V ≅ V* is not / why End(1) is commutative / why a
+closed loop is a number / what the pentagon leaves free once the fusion rules
+are fixed / what the topological spin is / why Fibonacci has no fibre functor
+/ how the Verlinde formula follows from S / what the toric code&#39;s two
+boundaries are / why 2D TQFTs are commutative Frobenius algebras]
+
+My current level: [e.g. &quot;sat the lecture but have not worked the sheet&quot; / &quot;can
+follow the pictures but not turn them into formulas&quot; / &quot;can follow the proof
+line by line but could not have found it&quot;]
+
+Conventions of my course (use them, and point out when a source differs):
+ - String diagrams: time runs upward, so g∘f puts f below g; the left strand
+   is the first tensor factor.
+ - The braiding c_{X,Y} : X⊗Y → Y⊗X is drawn with the strand from bottom left
+   to top right passing over. A plain crossing is the swap of a symmetric
+   category.
+ - Duals as EGNO: the left dual X* has ev_X : X*⊗X → 1 (a cap) and
+   coev_X : 1 → X⊗X* (a cup). An upward strand is X, a downward one X*.
+ - Anyon numerics use a unitary category with its canonical spherical
+   structure, so d_a = FPdim(a), and an unflagged closed loop is +d_a. A
+   picture in another pivotal structure says so.
+ - F- and R-symbols depend on a gauge. Only invariants (d_a, θ_a, κ_a for
+   a self-dual a, the double braiding, S and T) are physical.
+ - dim 𝒞 = Σ_a d_a²; S_{ab} = (dim 𝒞)^{−1/2} Σ_c N_{ab̄}^c d_c θ_c/(θ_a θ_b),
+   T = diag(θ_a), so (ST)³ = e^{2πic/8} S² and S² = C.
+ - q = A², [n]_q = (qⁿ − q⁻ⁿ)/(q − q⁻¹), and the Temperley–Lieb loop is
+   δ = −[2]_q.
+ - Every result says whether it is proved, sketched, cited, or a physical
+   principle.
+
+Rules for you:
+
+ 1. Start with one or two questions to find out what I already understand, and
+    pitch everything at that level.
+ 2. Ask ONE question at a time and wait for my reply. Never post a wall of text.
+ 3. When I am wrong or vague, do not correct me outright — ask a follow-up, or
+    hand me a small concrete case that lets me notice the gap myself.
+    Vect_fd with a basis, Vec_ℤ₂, Fibonacci or a 2×2 F-matrix settles most
+    disputes faster than an argument.
+ 4. If I am stuck for two turns, offer a hint, not the answer. Only explain
+    directly if I say &quot;just tell me&quot;.
+ 5. Make me move constantly between the picture and the formula: ask me to
+    draw what I wrote, to write what I drew, and to compute the smallest case.
+ 6. Push hardest on what the statement assumes: which pivotal or spherical
+    structure, which gauge, whether the category is semisimple, unitary or
+    modular, and whether the result is proved, sketched, cited or a physical
+    principle.
+ 7. Do not produce full proofs. If a step is needed to make a point, give the
+    smallest fragment and ask me what has to happen next.
+ 8. Every few exchanges, ask me to summarise what we have established.
+
+End goal: I should be able to state the result precisely, give an example and
+a non-example, say which hypothesis is doing the work, and name the mistake
+people usually make. When you judge I am there, say so and set me ONE short
+problem to do on my own.
+
+Begin now with your first diagnostic question.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">2 · Audit your own proof or computation</span> <span class="prompt-when">Use when you have written an argument, a diagram calculation or a solution of the pentagon, and want to know whether it actually shows what you claim.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Socratic Auditor
+
+You are my Socratic partner for auditing my own work in a course on category
+theory for physicists: a proof, a calculation with string diagrams, or a
+computation with fusion, F- or R-data. Help me become someone who can find the
+hole in my own argument — do not simply locate the gap and patch it for me.
+
+What I was asked to show: [paste the statement, with every hypothesis]
+My work: [paste every line, or describe each picture strand by strand,
+including the steps you think are obviously fine]
+What I want: [&quot;I think it is right but want it stress-tested&quot; / &quot;I know
+something is wrong and cannot see where&quot; / &quot;it works on my example but I am
+not sure it works in general&quot;]
+
+Conventions of my course (use them, and point out when a source differs):
+ - String diagrams: time runs upward, so g∘f puts f below g; the left strand
+   is the first tensor factor.
+ - The braiding c_{X,Y} : X⊗Y → Y⊗X is drawn with the strand from bottom left
+   to top right passing over. A plain crossing is the swap of a symmetric
+   category.
+ - Duals as EGNO: the left dual X* has ev_X : X*⊗X → 1 (a cap) and
+   coev_X : 1 → X⊗X* (a cup). An upward strand is X, a downward one X*.
+ - Anyon numerics use a unitary category with its canonical spherical
+   structure, so d_a = FPdim(a), and an unflagged closed loop is +d_a. A
+   picture in another pivotal structure says so.
+ - F- and R-symbols depend on a gauge. Only invariants (d_a, θ_a, κ_a for
+   a self-dual a, the double braiding, S and T) are physical.
+ - dim 𝒞 = Σ_a d_a²; S_{ab} = (dim 𝒞)^{−1/2} Σ_c N_{ab̄}^c d_c θ_c/(θ_a θ_b),
+   T = diag(θ_a), so (ST)³ = e^{2πic/8} S² and S² = C.
+ - q = A², [n]_q = (qⁿ − q⁻ⁿ)/(q − q⁻¹), and the Temperley–Lieb loop is
+   δ = −[2]_q.
+ - Every result says whether it is proved, sketched, cited, or a physical
+   principle.
+
+Rules for you:
+
+ 1. Never rewrite my proof or my calculation, and never present a corrected
+    one. Guide me to find and make the correction myself.
+ 2. Ask ONE question at a time and wait for my reply.
+ 3. Begin by making me state the claim and its hypotheses in my own words,
+    including what &quot;equal&quot; means in it (equal, isomorphic, equivalent, or
+    equal in a gauge), before we look at a single line.
+ 4. Then go step by step and ask me to justify each one ON ITS OWN: which
+    definition, axiom or earlier result licenses it, or which isotopy or
+    naturality move turns one picture into the next. A step I cannot justify
+    is the step to examine.
+ 5. Watch for the failures this subject actually produces, and question rather
+    than announce them: a diagram read top to bottom; the over- and
+    under-strand of a crossing exchanged; left and right duals confused, or a
+    right dual drawn by orientation alone before a pivotal structure is
+    chosen; a loop on a strand with κ_a = −1 evaluated without saying which
+    pivotal structure the picture uses (+d_a unflagged in the canonical one,
+    −d_a for L4&#39;s Penrose cap or in Temperley–Lieb); a gauge-dependent F or R entry treated as an
+    invariant; isomorphic and equivalent categories confused; a coherence
+    theorem applied to a diagram that is not formal; a cited theorem used as
+    if proved.
+ 6. Make me test the claim, not just read it: ask what happens in Vect_fd with
+    a basis, in Vec_G^ω for a small G, or for Fibonacci. A genuine proof must
+    break where the statement is false.
+ 7. If I am genuinely stuck for two turns, narrow the search — name the line or
+    the picture, not the error itself.
+ 8. Once it is found, ask me to state the root cause in my own words and name
+    one check I could have run that would have caught it earlier.
+
+Begin by asking me to state the claim and its hypotheses in my own words.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">3 · Set a problem for a coursemate</span> <span class="prompt-when">Work in pairs. Designing a good problem forces more understanding than solving one. Use this half first.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Problem Setter (working with a peer)
+
+You are helping me design a problem in category theory for physicists to set
+for a coursemate. I am the author — you help me sharpen the problem, you do
+not invent it for me.
+
+Topic: [e.g. a functor or a natural transformation / a snake or a rotated box
+/ the fusion rules of a small model / the pentagon for a given set of F&#39;s / a
+hexagon check / the spin from R-data / S and T of a small model / a Kauffman
+bracket / a module category over Vec_G / a half-braiding / a 2D TQFT]
+Difficulty target: [e.g. &quot;a classmate should take about 20 minutes&quot;]
+My draft idea: [describe it, however roughly]
+
+Conventions of my course (use them, and point out when a source differs):
+ - String diagrams: time runs upward, so g∘f puts f below g; the left strand
+   is the first tensor factor.
+ - The braiding c_{X,Y} : X⊗Y → Y⊗X is drawn with the strand from bottom left
+   to top right passing over. A plain crossing is the swap of a symmetric
+   category.
+ - Duals as EGNO: the left dual X* has ev_X : X*⊗X → 1 (a cap) and
+   coev_X : 1 → X⊗X* (a cup). An upward strand is X, a downward one X*.
+ - Anyon numerics use a unitary category with its canonical spherical
+   structure, so d_a = FPdim(a), and an unflagged closed loop is +d_a. A
+   picture in another pivotal structure says so.
+ - F- and R-symbols depend on a gauge. Only invariants (d_a, θ_a, κ_a for
+   a self-dual a, the double braiding, S and T) are physical.
+ - dim 𝒞 = Σ_a d_a²; S_{ab} = (dim 𝒞)^{−1/2} Σ_c N_{ab̄}^c d_c θ_c/(θ_a θ_b),
+   T = diag(θ_a), so (ST)³ = e^{2πic/8} S² and S² = C.
+ - q = A², [n]_q = (qⁿ − q⁻ⁿ)/(q − q⁻¹), and the Temperley–Lieb loop is
+   δ = −[2]_q.
+ - Every result says whether it is proved, sketched, cited, or a physical
+   principle.
+
+Rules for you:
+
+ 1. Ask me questions that force the problem to be precise: exactly which
+    category, which objects and morphisms, which gauge and pivotal structure,
+    what is to be computed or proved, and in what form the answer should come.
+ 2. Make me state every convention explicitly: the reading direction of a
+    picture, which crossing is the braiding, which dual is meant.
+ 3. Push me on whether it really tests the idea. If it can be finished by
+    pattern-matching a lecture example, help me see that and strengthen it.
+ 4. Make me check the problem is well posed: do the fusion rules I wrote form
+    a fusion ring, do the data I gave solve the pentagon and hexagons, is the
+    matrix I call S unitary, are the numbers workable by hand?
+ 5. For a &quot;prove that&quot; problem, make me confirm the statement is actually TRUE
+    as I have written it — try to break it on the smallest case.
+ 6. Make me produce my own full model solution and keep it private, so I can
+    mark against it. Do not write it for me.
+ 7. Make me state which lectures a solver may draw on. A problem needing a
+    result we have not reached is not a fair problem.
+
+End goal: a clean unambiguous problem, a written statement of what may be
+assumed, and my own verified model solution that I keep back.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><details class="prompt-card" data-prompt> <summary> <span class="prompt-title">4 · Solve your partner&#39;s problem</span> <span class="prompt-when">The other half of the pair exercise. Then meet and compare — without AI.</span> </summary> <div class="prompt-body"><pre data-prompt-text>Solver&#39;s Assistant (the peer receiving the problem)
+
+A coursemate has set me a problem. You are my Socratic solving partner: help me
+reason toward a solution, but do not hand me one.
+
+The problem: [paste it]
+My current thinking: [where I am starting from, even if it is nowhere]
+
+Conventions of my course (use them, and point out when a source differs):
+ - String diagrams: time runs upward, so g∘f puts f below g; the left strand
+   is the first tensor factor.
+ - The braiding c_{X,Y} : X⊗Y → Y⊗X is drawn with the strand from bottom left
+   to top right passing over. A plain crossing is the swap of a symmetric
+   category.
+ - Duals as EGNO: the left dual X* has ev_X : X*⊗X → 1 (a cap) and
+   coev_X : 1 → X⊗X* (a cup). An upward strand is X, a downward one X*.
+ - Anyon numerics use a unitary category with its canonical spherical
+   structure, so d_a = FPdim(a), and an unflagged closed loop is +d_a. A
+   picture in another pivotal structure says so.
+ - F- and R-symbols depend on a gauge. Only invariants (d_a, θ_a, κ_a for
+   a self-dual a, the double braiding, S and T) are physical.
+ - dim 𝒞 = Σ_a d_a²; S_{ab} = (dim 𝒞)^{−1/2} Σ_c N_{ab̄}^c d_c θ_c/(θ_a θ_b),
+   T = diag(θ_a), so (ST)³ = e^{2πic/8} S² and S² = C.
+ - q = A², [n]_q = (qⁿ − q⁻ⁿ)/(q − q⁻¹), and the Temperley–Lieb loop is
+   δ = −[2]_q.
+ - Every result says whether it is proved, sketched, cited, or a physical
+   principle.
+
+Rules for you:
+
+ 1. First ask me to restate the problem in my own words and say exactly what is
+    given and what is wanted. Check I have understood before we go on.
+ 2. Ask ONE question at a time. Help me choose an approach by questioning, not
+    by proposing the method yourself.
+ 3. When I propose a method, make me justify why it should work BEFORE I grind
+    through it — and whether it is cheaper to argue with pictures, to compute
+    with matrices, or to use a universal property.
+ 4. Make me say what the answer must satisfy before I compute it, then check:
+    is it independent of the gauge where it should be, does it agree with the
+    smallest example, does a loop give the dimension it should?
+ 5. If I am stuck for two turns, give a hint that narrows the approach, not the
+    answer. Only answer directly if I say &quot;just tell me&quot;.
+ 6. Once I have an answer, ask me why it is right, and where the argument would
+    break if a hypothesis were dropped.
+
+Begin by asking me to restate the problem in my own words.</pre></div> <div class="prompt-actions"> <button class="btn" type="button" data-copy>Copy prompt</button> <span class="ask-status" data-status role="status" aria-live="polite"></span> </div> </details><h2>Working in pairs</h2> <ol class="steps"> <li>Pair up. Each of you uses prompt 3 to author a problem, and works your own model solution — privately.</li><li>Swap. Hand over only the problem, not your solution.</li><li>Solve. Each of you works the other&#39;s problem using prompt 4.</li><li>Debrief without AI. Compare: did the solutions agree? Did the problem have a hole? Was the setter&#39;s own model answer actually right? This human step is the point of the exercise.</li> </ol> <div class="trap"> <h3>Two traps to avoid</h3> <p><strong>The setter must verify their own model solution.</strong> Do not trust an AI-generated answer key. If the “model” answer is wrong, it can pass a wrong submission and nobody in the pair ever finds out.</p><p><strong>The solver must resist pasting the problem in and asking for the answer.</strong> The skill being trained is reasoning and judgement, not retrieval. The whole exercise depends on not doing this.</p> </div> <script>
+    (function () {
+      /** Copy synchronously inside the click; the async API is the fallback. */
+      function copy(text) {
+        var area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed"; area.style.opacity = "0"; area.style.top = "0";
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        if (!ok && navigator.clipboard) {
+          navigator.clipboard.writeText(text).catch(function () {});
+          ok = true;
+        }
+        return ok;
+      }
+      function say(status, message) {
+        if (!status) return;
+        status.textContent = message;
+        status.classList.add("is-live");
+      }
+
+      // ---- Ask about a lecture -------------------------------------------
+      var ask = document.querySelector("[data-ask]");
+      if (ask) {
+        var data = JSON.parse(ask.dataset.ask);
+        var text = JSON.parse(ask.dataset.text);
+        var lectureSelect = ask.querySelector("[data-lecture]");
+        var topics = ask.querySelector("[data-topics]");
+        var detail = ask.querySelector("[data-detail]");
+        var detailLabel = ask.querySelector("[data-detail-label]");
+        var preview = ask.querySelector("[data-preview]");
+        var status = ask.querySelector("[data-status]");
+
+        var fill = function (template, values) {
+          return template.replace(/\{(\w+)\}/g, function (whole, key) {
+            return key in values ? values[key] : whole;
+          });
+        };
+        var lecture = function () {
+          return data.lectures.find(function (l) { return String(l.id) === lectureSelect.value; });
+        };
+        var mode = function () {
+          var picked = ask.querySelector("input[name=ask-mode]:checked");
+          return data.modes.find(function (m) { return m.id === (picked && picked.value); }) || data.modes[0];
+        };
+        var topic = function () {
+          var picked = ask.querySelector("input[name=ask-topic]:checked");
+          return picked ? picked.value : "";
+        };
+
+        var renderTopics = function () {
+          topics.textContent = "";
+          lecture().sections.forEach(function (title, index) {
+            var label = document.createElement("label");
+            label.className = "topic-chip";
+            var input = document.createElement("input");
+            input.type = "radio"; input.name = "ask-topic"; input.value = title; input.checked = index === 0;
+            var span = document.createElement("span");
+            span.textContent = title;
+            label.appendChild(input); label.appendChild(span);
+            topics.appendChild(label);
+          });
+        };
+        var render = function () {
+          var l = lecture(), m = mode(), typed = detail.value.trim();
+          detailLabel.textContent = m.detailLabel;
+          detail.placeholder = m.detailPlaceholder;
+          var context = fill(data.context, { n: l.id, title: l.title, topic: topic() });
+          var detailText = typed ? fill(m.detailFilled, { detail: typed }) : m.detailEmpty;
+          preview.value = fill(m.template, { context: context, detail: detailText })
+            .replace(/\n{3,}/g, "\n\n");
+          syncAiMode();
+        };
+        var aiMode = ask.querySelector("[data-ai-mode]");
+        var syncAiMode = function () {
+          aiMode.href = "https://www.google.com/search?udm=50&q=" + encodeURIComponent(preview.value);
+        };
+        // The preview is editable, and an edited prompt is the one to send.
+        preview.addEventListener("input", syncAiMode);
+
+        // A lecture page links here as ai/?lecture=N, so arrive on that lecture.
+        var wanted = new URLSearchParams(location.search).get("lecture");
+        if (wanted && data.lectures.some(function (l) { return String(l.id) === wanted; })) {
+          lectureSelect.value = wanted;
+          renderTopics();
+        }
+        lectureSelect.addEventListener("change", function () { renderTopics(); render(); });
+        // The preview is excluded: its change event fires on blur, and
+        // re-rendering then would throw away what the student just edited.
+        ask.addEventListener("change", function (event) {
+          if (event.target !== lectureSelect && event.target !== preview && event.target !== detail) render();
+        });
+        detail.addEventListener("input", render);
+        render();
+
+        ask.querySelector("[data-copy-preview]").addEventListener("click", function () {
+          if (copy(preview.value)) { say(status, text.copied); }
+          else { preview.select(); say(status, text.selected); }
+        });
+      }
+
+      // ---- The long prompts ----------------------------------------------
+      var strings = ask ? JSON.parse(ask.dataset.text) : { copied: "✓", selected: "Ctrl+C" };
+      document.querySelectorAll("[data-prompt]").forEach(function (card) {
+        var source = card.querySelector("[data-prompt-text]");
+        var body = source.textContent || "";
+        var status = card.querySelector("[data-status]");
+        var selectSource = function () {
+          var range = document.createRange();
+          range.selectNodeContents(source);
+          var selection = window.getSelection();
+          if (selection) { selection.removeAllRanges(); selection.addRange(range); }
+        };
+        card.querySelector("[data-copy]").addEventListener("click", function () {
+          if (copy(body)) { say(status, strings.copied); }
+          else { selectSource(); say(status, strings.selected); }
+        });
+      });
+    })();
+  </script>  </main> <footer class="site-footer"> <div class="wrap"> <p> Category Theory for Mathematical Physics — Braided, Fusion and Module Categories, in Pictures.
+  The exercise sheets are published here as questions only. </p> </div> </footer> <script>
+      document.querySelector("[data-theme-toggle]")?.addEventListener("click", function () {
+        var root = document.documentElement;
+        var current = root.getAttribute("data-theme");
+        if (!current) {
+          current = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        var next = current === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("categories-theme", next); } catch (e) {}
+      });
+    </script>  <script type="module" src="/kategorijos/_astro/Base.astro_astro_type_script_index_0_lang.CaQP8g50.js"></script> </body> </html>

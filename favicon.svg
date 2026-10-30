@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Category Theory for Mathematical Physics">
+  <rect width="32" height="32" rx="7" fill="#3f6a1f"/>
+  <!-- A string-diagram crossing, the braiding: time runs upward (Bible K1)
+       and the strand from bottom left to top right passes over (K2), so the
+       other strand is broken where it passes under. White on the accent. -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2.4">
+    <path d="M10 27 L10 23 C10 16 22 16 22 9 L22 5"/>
+    <path d="M22 27 L22 23 C22 20.6 20.6 19.2 19 18.2"/>
+    <path d="M13 13.8 C11.4 12.8 10 11.4 10 9 L10 5"/>
+  </g>
+</svg>
